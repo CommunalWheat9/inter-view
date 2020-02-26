@@ -1,0 +1,131 @@
+html,
+    body, div, span, applet, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    a, abbr, acronym, address, big, cite, code,
+    del, dfn, em, img, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var,
+    b, u, i, center,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, embed,
+    figure, figcaption, footer, header, hgroup,
+    menu, nav, output, ruby, section, summary,
+    time, mark, audio, video {
+    	margin: 0;
+    	padding: 0;
+    	border: 0;
+    	font-size: 100%;
+    	font: inherit;
+    	vertical-align: baseline;
+    }
+    /* HTML5 display-role reset for older browsers */
+    article, aside, details, figcaption, figure,
+    footer, header, hgroup, menu, nav, section {
+    	display: block;
+    }
+    body {
+    	line-height: 1;
+    }
+    ol, ul {
+    	list-style: none;
+    }
+    blockquote, q {
+    	quotes: none;
+    }
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+    	content: '';
+    	content: none;
+    }
+    table {
+    	border-collapse: collapse;
+    	border-spacing: 0;
+    }
+html, body{
+    overflow: hidden;
+    background-color: #F62F12;
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+}
+*{
+    -webkit-backface-visibility:  hidden;
+    -webkit-tap-highlight-color:  transparent;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+
+ }
+ @import url('https://rsms.me/inter/inter.css');
+ html { font-family: 'Inter', sans-serif; }
+ @supports (font-variation-settings: normal) {
+   html { font-family: 'Inter var', sans-serif; }
+ }
+.fixed{
+    overflow:none;
+}
+.slider{
+    display: flex;
+    overflow-x: auto;
+    width: 100%;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+
+
+}
+.slider > iframe,#scr3{
+    scroll-snap-align: start;
+
+}
+
+
+#scr1{
+    height: 100vh;
+    width: 100vw;
+    flex-shrink: 0;
+}
+#scr2{
+    flex-shrink: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: #B590FA;
+
+}
+#scr3{
+    flex-shrink: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: auto;
+    background-color: black;
+
+}
+
+#scr3 p{
+
+    font-family: 'Inter', sans-serif;
+    font-size: 1.6em;
+    padding: 1rem;
+    color: white;
+    line-height: 150%;
+}
+
+#scr3 p span{
+    font-family: 'Inter', sans-serif;
+    background-color: #6c53ed;
+    border-radius: 7px;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: black;
+
+}
+
+#scr3 a{
+  text-decoration: none;
+  color: #6c53ed;
+}
+@media screen and (min-width: 640px){
+#scr3 p{
+  margin-right: 25vw;
+}
+}
+/* appliquer un flex shrink a chaque iframe */
+/* il y a 2 iframes et 1 divs */

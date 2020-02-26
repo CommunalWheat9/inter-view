@@ -1,0 +1,126 @@
+html,
+    body, div, span, applet, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    a, abbr, acronym, address, big, cite, code,
+    del, dfn, em, img, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var,
+    b, u, i, center,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, embed,
+    figure, figcaption, footer, header, hgroup,
+    menu, nav, output, ruby, section, summary,
+    time, mark, audio, video {
+    	margin: 0;
+    	padding: 0;
+    	border: 0;
+    	font-size: 100%;
+    	font: inherit;
+    	vertical-align: baseline;
+    }
+    /* HTML5 display-role reset for older browsers */
+    article, aside, details, figcaption, figure,
+    footer, header, hgroup, menu, nav, section {
+    	display: block;
+    }
+    body {
+    	line-height: 1;
+    }
+    ol, ul {
+    	list-style: none;
+    }
+    blockquote, q {
+    	quotes: none;
+    }
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+    	content: '';
+    	content: none;
+    }
+    table {
+    	border-collapse: collapse;
+    	border-spacing: 0;
+    }
+html, body{
+    overflow: hidden;
+    background-color: #F62F12;
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+}
+*{
+    -webkit-backface-visibility:  hidden;
+    -webkit-tap-highlight-color:  transparent;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+
+ }
+ @import url('https://rsms.me/inter/inter.css');
+ html { font-family: 'Inter', sans-serif; }
+ @supports (font-variation-settings: normal) {
+   html { font-family: 'Inter var', sans-serif; }
+ }
+
+
+ body{
+   background-color: black;
+   width: 100vw;
+   height: 100vh;
+ }
+ p{
+   color: white;
+
+ }
+img{
+  width: 5em;
+  height: auto;
+
+  margin-top: 1.8em;
+  margin-bottom: 1.8em;
+}
+span{
+      background-color: #6c53ed;
+      border-radius: 7px;
+      padding-left: 5px;
+      padding-right: 5px;
+      color: black;
+}
+.loading{
+  color: #999999;
+}
+
+#timer{
+  font-size: 2em;
+}
+section{
+  width: 100vw;
+  height: 35vh;
+  padding: 18px;
+}
+
+/* flexbox */
+.flex{
+  height:65vh;
+  width: 100vw;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.flex .bal div{
+    width: 100vw;
+    height: 32.5vh;
+    padding: 10px;
+}
+.flex p{
+  font-size: 1.4em;
+}
+
+.bal{
+  height: 32.5vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
